@@ -15,65 +15,65 @@ node --test
 const add = (a, b) => {
   //ex: add(3,5) should return 5
   //write your code here
-  return; //return the result
+  return a+b;
 };
 
 //subtract function
 const subtract = (a, b) => {
   //ex: subtract(5,9) should return -4
   //write your code here
-  return; //return the result
+  return a-b;
 };
 
 //multiply function
 const multiply = (a, b) => {
   //ex: multiply (12, 9) should return 108
   //write your code here
-  return; //return the result
+  return a*b;
 };
 
 //divide function
 const divide = (a, b) => {
   //ex: divide(55, 5) should return 11
   //Make sure to test for zero division should throw and error
-  //write your code here
-  return; //return the result
+  if(b===0) throw new Error("Cannot divide by zero");
+  return a/b;
 };
 
 //modulas function
 const modulas = (a, b) => {
   //ex: modulas(17,4) should return 1
   //write your code here
-  return; //return the result
+  return a%b;
 };
 
 //power function
 const power = (a, b) => {
   //ex: power(2, 5) should return 32
   //write your code here
-  return; //return the result
+  return Math.pow(a,b);
 };
 
 //square function
 const squareRoot = (a) => {
   //Make sure that squareRoot a negative number should throw an error
   //ex: squareRoot(25) should return 5
-  //write your code here
-  return; //return the result
+  if(a<0) throw new Error("Cannot calculate square root of a negative number");
+  return Math.sqrt(a);
 };
 
 //floor function
 const floor = (a) => {
   //ex: floor(15.3) should return 15
   //write your code here
-  return; //return the result
+  return Math.floor(a);
 };
 
 //ceiling function
 const ceiling = (a) => {
   //ex: ceiling(15.3) should return 16
   //write your code here
-  return; //return the result
+  return Math.ceil(a); 
 };
 
 ////////////////////////////////////////
